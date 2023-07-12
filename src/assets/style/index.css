@@ -1,0 +1,13 @@
+
+
+li {
+	list-style: none;
+}
+
+
+#root {
+	background: linear-gradient(90deg, #b4e6f6 10%, #eebbb3 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

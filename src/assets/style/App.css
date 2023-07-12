@@ -1,0 +1,65 @@
+.title {
+	font-size: 2rem;
+	color: #333;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.list {
+	position: relative;
+	overflow: hidden;	
+	width: 100%;
+	display: grid;
+	place-content: center;
+}
+
+.list:hover .list-item {
+	filter: blur(5px);
+	opacity: 0.25;
+}
+
+.list-item {
+	display: flex;
+	align-items: center;
+	padding: 25px 25px;
+	border-radius: 100px;
+	margin: 10px 0;
+	cursor: pointer;
+	background-color: white;
+	transition: all 0.5s;
+	overflow: hidden;
+}
+
+.list .list-item:hover {
+	filter: blur(0px);
+	opacity: 1;
+	transform: scale(1.15);
+	box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-item:hover .rank {
+	right: 35px;
+}
+
+.list-item .content {
+	padding-inline: 35px;
+}
+
+.content .rank {
+	font-size: 48px;
+	font-weight: 800;
+	color: #03a9f4;
+}
+
+.content .name {
+	font-size: 24px;
+	color: #333;
+	font-weight: 900;
+}
+
+.list-item .point {
+	font-size: 18px;
+	color: #333;
+	font-weight: 500;
+}
